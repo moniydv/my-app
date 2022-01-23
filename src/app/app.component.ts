@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'Game Control';
+  timerList: number[] = [];
+
+  afterStartClicked(count: number) {
+    this.timerList.push(count);
+  }
 }
